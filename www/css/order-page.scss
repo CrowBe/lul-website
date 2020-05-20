@@ -1,0 +1,46 @@
+.order-page-container {
+    margin: 20vh auto 15vh;
+    color: #021342;
+    max-width: 80vw;
+    overflow: hidden;
+    .customer-details {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    label {
+        display: block;
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    
+    input[type=number] {
+        width: 50px;
+    }
+
+    input[type=text] {
+        max-width: 35vw;
+    }
+
+    input[type=email] {
+        max-width: 35vw;
+    }
+    
+}
+
+.order-form-container {
+    max-width: 100%;
+    form {
+        div {
+            margin-bottom: 1.5vh;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/order-page.css" />
+    <title>Document</title>
+</head>
+    <body>
+        <header>
+            <nav id='main-nav-bar'>
+                <div id="nav-logo">
+                    <a href="/"><img src="images/colour-logo.png" alt="Logo, outline of a house with a leaf integrated into it." id="main-nav-home" /></a>
+                </div>
+                <div id="contact-button">
+                    <a href="/contact-page.html"><button>Contact Us</button></a>
+                </div>
+            </nav>
+        </header>
+        <div class="order-page-container">
+                <h1>Order Form</h1>
+                <p>Order by 7am Friday for Friday Delivery or call to pick up and select your own</p>
+                <p>Phone: (02) 4067 4076</p>
+                <p>Pickup Location: 6 Alton Rd, Cooranbong, NSW, 2265</p>
+                <div class="order-form-container">
+                    <form id="order-form" class="gform pure-form pure-form-stacked" method="POST"
+                    action="https://script.google.com/macros/s/AKfycbx5Kl_VELDZevyGZggcf4eIuuIu6DR5blPCLQg1rw9nNWj6C0I9/exec">
+                        <div class="customer-details">
+                            <div>
+                                <label for="order-name">Name</label>
+                                <input type="text" name="name" id="order-name" placeholder="Name*" required/>
+                            </div>
+                            <div>
+                                <label for="order-number">Number</label>
+                                <input type="text" name="number" id="order-number" placeholder="Phone Number*" required/>
+                            </div>
+                        </div>
+                        <div class="customer-details">
+                            <div>
+                                <label for="order-email">Email</label>
+                                <input type="email" name="email" id="order-email" placeholder="Email Address*" required/>
+                            </div>
+                            <div>
+                                <label for="order-suburb">Suburb</label>
+                                <input type="text" name="suburb" id="order-suburb" placeholder="Your Suburb*" required/>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="herbs">Seasonal Herb Seedlings (100mm pots)</label>
+                            <input type="number" name="herb-seedlings" id="herbs" min="0"/>
+                            <span>$5 per each/4 for $20</span>
+                        </div>
+                        <div>
+                            <label for="veges">Seasonal Vege Seedlings (100mm pots)</label>
+                            <input type="number" name="vege-seedlings" id="vege-seedlings" min="0"/>
+                            <span>$5 per each/4 for $20</span>
+                        </div>
+                        <div>
+                            <label for="flowers">Seasonal Flower Seedlings (100mm pots)</label>
+                            <input type="number" name="flower-seedlings" id="flower-seedlings" min="0"/>
+                            <span>$5 per each/4 for $20</span>
+                        </div>
+                        <div>
+                            <label for="potting-mix">Premium Potting Mix (30L)</label>
+                            <input type="number" name="potting-mix" id="potting-mix" min="0"/>
+                            <span>1 Bag for $7.00 / 3 Bags for $20</span>
+                        </div>
+                        <div>
+                            <label for="garden-soil">Premium Garden Soil (30L)</label>
+                            <input type="number" name="garden-soil" id="garden-soil" min="0"/>
+                            <span>1 Bag for $7.00 / 3 Bags for $20</span>
+                        </div>
+                        <div>
+                            <label for="cow-manure">Composted Cow Manure (30L)</label>
+                            <input type="number" name="cow-manure" id="cow-manure" min="0"/>
+                            <span>1 Bag for $7.00 / 3 Bags for $20</span>
+                        </div>
+                        <div>
+                            <label for="manure-3in1">Composted 3in1 Manure (30L) (Chicken/Cow/Mushroom)</label>
+                            <input type="number" name="manure-3in1" id="manure-3in1" min="0"/>
+                            <span>1 Bag for $7.00 / 3 Bags for $20</span>
+                        </div>
+                        <div>
+                            <label for="chicken-manure">Composted Chicken Manure (30L)</label>
+                            <input type="number" name="chicken-manure" id="chicken-manure" min="0"/>
+                            <span>1 Bag for $7.00 / 3 Bags for $20</span>
+                        </div>
+                        <div>
+                            <label for="sugarcane-mulch">Sugarcane Mulch (12m²)</label>
+                            <input type="number" name="sugarcane-mulch" id="sugarcane-mulch" min="0"/>
+                            <span>1 Large Bale for $18 / 3 for $50</span>
+                        </div>
+                        <div>
+                            <label for="timber-beds">Timber Raised Garden Beds</label>
+                            <span style="display: block;">Prices from $440 (Fully Installed- Ready to Plant)</span>
+                            <input type="checkbox" id="timber-beds" value="yes">
+                            <span>I would like to be contacted about this.</span>
+                        </div>
+                        <div>
+                            <label for="garden-refresh">Autumn Special Garden Refresh</label>
+                            <span style="display: block;">Let us know if you're interested and we'll get in touch.</span>
+                            <select name="garden-refresh" id="garden-refresh">
+                                <option default>No Thanks</option>
+                                <option value="half-day">Half Day Refresh - $340</option>
+                                <option value="full-day">Full Day Refresh - $660</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Free Landscaping Quote</p>
+                            <span style="display: block;">Let us know if you're interested and we'll get in touch.</span>
+                            <input type="checkbox" name="landscaping-quote" id="landscaping-quote" value="yes"/>
+                            <label style="display: inline;" for="landscaping-quote">I'm interested</label>
+                        </div>
+                        <div>
+                            <label for="order-notes"><p>Order Notes</p></label>
+                            <textarea name="notes" id="order-notes" placeholder="Any questions or requests?" required>
+                            </textarea>
+                        </div>
+                        <input id="honeypot" type="text" name="honeypot" value="" style="display: none;" />
+                    </form>
+                    <button type="submit" form="order-form" id="order-submit">Submit Order</button>
+                </div>
+        </div>
+        <footer id="sitewide-footer">
+            <div class="legal-information-container">
+                <div>
+                    <p>© 2020 Looking Up Landscapes</p>
+                    <p><a href="/terms-page.html" id="terms-link">Website Terms of Use</a></p>
+                </div>
+                <div>
+                    <p>ABN: 63 622 774 672</p>
+                    <p>License: 324794C</p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+    <script data-cfasync="false" src="js/order-script.js"></script>
+</html>

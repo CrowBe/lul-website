@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://kit.fontawesome.com/17ec4c6a33.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+    <body>
+        <header>
+            <nav id='main-nav-bar'>
+                <div id="nav-logo">
+                    <a href="/"><img src="images/colour-logo.png" alt="Logo, outline of a house with a leaf integrated into it." id="main-nav-home" /></a>
+                </div>
+                <div id="contact-button">
+                    <a href="/contact-page.html"><button>Contact Us</button></a>
+                </div>
+            </nav>
+        </header>
+        <div class="contact-page-container">
+            <div class="contact-form-section">
+                <h2>Contact Us</h2>
+                <p>We offer a full range of landscaping services with over 15 years of experience.</p>
+                <div class="contact-form-container">
+                    <h3>Send Us A Message</h3>
+                    <form id="contact-form" class="gform pure-form pure-form-stacked" method="POST"
+                    action="https://script.google.com/macros/s/AKfycbwlF3R8lKfK2W1ksgU9clZtKmGLlO0o8G-PYAqW22WwbnA5GBMQ/exec">
+                        <input type="text" name="name" id="contact-name" placeholder="Name*" required/>
+                        <input type="text" name="number" id="contact-number" placeholder="Phone Number*" required/>
+                        <select name="time" id="contact-time">
+                            <option hidden default value="anytime">Best Time?</option>
+                            <option value="before 9am">Before 9am</option>
+                            <option value="9am-5pm">9am-5pm</option>
+                            <option value="after 5pm">After 5pm</option>
+                            <option value="anytime">Anytime</option>
+                        </select>
+                        <textarea name="message" id="contact-message" placeholder="What can we help you with*" required>
+                        </textarea>
+                        <input id="honeypot" type="text" name="honeypot" value="" />
+                    </form>
+                    <button type="submit" form="contact-form" id="contact-submit">Send Message</button>
+                </div>
+            </div>
+            <div class="contact-details-section">
+                <div class="contact-info-container">
+                    <h3>Contact Info</h3>
+                    <div class="contact-card-container">
+                        <div class="contact-info-card">
+                            <p><i class="fas fa-phone-volume contact-icon"></i>(02) 4067 4076</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <p><i class="fas fa-mobile-alt contact-icon"></i>+61 409 360 118</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <p><i class="far fa-envelope contact-icon"></i>office@lookinguplandscapes.com.au</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-hours-container">
+                    <h3 id="contact-hours-header">Office Hours</h3>
+                    <div class="hours-cards-container">
+                        <div>
+                            <p>Mon-Fri: </p>
+                            <p>7am-5pm</p>
+                        </div>
+                        <div>
+                            <p>Saturday:</p>
+                            <p>9am-3pm</p>
+                        </div>
+                        <div>
+                            <p>Sunday:</p>
+                            <p>Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="sitewide-footer">
+            <div class="legal-information-container">
+                <div>
+                    <p>© 2020 Looking Up Landscapes</p>
+                    <p><a href="/terms-page.html" id="terms-link">Website Terms of Use</a></p>
+                </div>
+                <div>
+                    <p>ABN: 63 622 774 672</p>
+                    <p>License: 324794C</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script data-cfasync="false" src="js/contact-script.js"></script>
+</html>
