@@ -43,10 +43,6 @@ body button:hover {
   transform: scale(1.1, 1.1);
 }
 
-#fb-plugin {
-  margin: 0 auto;
-}
-
 #main-nav-bar {
   position: fixed;
   display: flex;
@@ -226,7 +222,7 @@ body button:hover {
 
 #about-page-link {
   position: absolute;
-  bottom: 2vh;
+  bottom: 3vh;
   left: 10vw;
   text-align: center;
 }
@@ -373,8 +369,8 @@ body button:hover {
 }
 
 .about-page {
-  margin-top: 15vh;
-  padding: 1vh 8vw 10vh;
+  margin: 15vh 0 10vh;
+  padding: 2vh 8vw;
 }
 .about-page h2 {
   font-family: "Poppins", sans-serif;
@@ -391,15 +387,27 @@ body button:hover {
   display: flex;
   padding-top: 15vh;
   height: 75vh;
+  overflow: hidden;
   width: 100%;
 }
 
+#fb-plugin {
+  margin: 0 auto;
+}
+
 #terms-page {
-  margin-top: 15vh;
-  padding: 1vh 8vw 10vh;
+  margin: 15vh 0 10vh;
+  padding: 2vh 8vw;
+}
+#terms-page h2 {
+  font-family: "Poppins", sans-serif;
 }
 #terms-page p {
+  font-family: "Roboto", sans-serif;
   font-size: 2.5vh;
+}
+#terms-page p span {
+  font-weight: bolder;
 }
 
 .contact-page-container {

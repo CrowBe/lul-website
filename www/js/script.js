@@ -91,6 +91,22 @@ const showContactInfo = (e) => {
     target.parentNode.removeChild(target);
 }
 
+const imageHover = (images, curr) => {
+    for (let image of images) {
+        image.classList.remove("hover");
+    };
+    images[curr].classList.add("hover");
+};
+
+const imageHoverLoop = (i) => {
+    const images = document.getElementsByClassName("project-image-text");
+    setTimeout(() => {
+        imageHover(images, i);
+        i = i < 5 ? i + 1 : 0;
+        imageHoverLoop(i);
+    }, 3000);
+};
+
 const loadEvents = () => {
     let targets = document.querySelectorAll('.section-container');
     for (let target of targets) {
@@ -101,6 +117,8 @@ const loadEvents = () => {
     for (let button of buttons) {
         button.addEventListener('click', showContactInfo);
     };
+
+    imageHoverLoop(0);
 };
 
 window.addEventListener('load', loadEvents);
